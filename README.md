@@ -1,12 +1,12 @@
-使用 nature 实现的 Llama2 model，这是从 [llama2.c](https://github.com/karpathy/llama2.c) 移植而来。由于 nature 没有进行 SIMD 优化，所以只有 llama2.c 1/4 左右的性能。
+Llama2 model implemented by nature, which is ported from [llama2.c](https://github.com/karpathy/llama2.c). Since nature is not SIMD-optimized, it has only about 1/4 of the performance of llama2.c.
 
-## 构建
+## Build
 
 1. install the https://github.com/nature-lang/nature nature compiler
-2. `nature build main.n` 获取 main 可执行文件
-3. 运行 `./main` 查看运行程序使用方式
+2. `nature build main.n` to get the main executable.
+3. Run `./main` to see how the running program works
 
-    ```sh
+     ```sh
     ./main
     Usage:   run <checkpoint> [options]
     Example: run model.bin -n 256 -i "Once upon a time"
@@ -21,8 +21,7 @@
     -y <string> (optional) system prompt in chat mode
     ```
 
-4. 拉取 stories15M.bin 模型到当前目录进行测试 
-
+4. Pull the stories15M.bin model into the current directory for testing.
     `wget https://huggingface.co/karpathy/tinyllamas/resolve/main/stories15M.bin`
 
 5. `./main stories15M.bin -i "Once upon a time"`
