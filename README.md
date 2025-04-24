@@ -1,4 +1,4 @@
-Llama2 model implemented by nature, which is ported from [llama2.c](https://github.com/karpathy/llama2.c). Since nature is not SIMD-optimized, it has only about 1/4 of the performance of llama2.c.
+Llama2 model implemented by [nature](https://github.com/nature-lang/nature), which is ported from [llama2.c](https://github.com/karpathy/llama2.c). Since nature is not SIMD-optimized, it has only about 1/4 of the performance of llama2.c.
 
 ## Build
 
